@@ -1,0 +1,15 @@
+[project]
+name = "dbt-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dbt-core>=1.7.19",
+    "dbt-mysql>=1.7.0",
+    "ipykernel>=6.29.5",
+    "pandas>=2.3.0",
+    "pymysql>=1.1.1",
+    "sqlalchemy>=2.0.41",
+    "sqlalchemy-utils>=0.41.2",
+]
