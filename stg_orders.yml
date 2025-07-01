@@ -4,6 +4,21 @@ models:
     - name: stg_orders
       columns:
         - name: order_id
+          tests:
+            - unique
         - name: customer_name
+          tests:
+            - not_null
+            - relationships:
+                to: ref('stg_customers')
+                field: customer_id
         - name: ordered_at
         - name: store
+          tests:
+            - not_null
+
+            
+
+
+
+
